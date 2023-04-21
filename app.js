@@ -2,6 +2,7 @@
 /* var express = require('express'); */
 /* var path = require('path'); */
 import 'dotenv/config.js'
+import './config/dabase.js'
 import createError from 'http-errors';
 import express from 'express';
 import path from 'path';
