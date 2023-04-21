@@ -5,4 +5,4 @@ mongoose.connect(process.env.MONGO)
     .then(() => console.log('database connected'))
     .catch(err => console.log(err))
     
-export default mongoose
+/* export default mongoose */
