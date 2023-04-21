@@ -2,7 +2,7 @@ import mongoose, {Schema, model,Types} from "mongoose"
 
 let shema = new Schema({
     name: { type: String, required: true },
-    last_name: { type: String, required: false },
+    last_name: { type: String},
     city: { type: String, required: true },
     country: { type: String, required: true },
     date: { type:Date },
@@ -19,5 +19,5 @@ let shema = new Schema({
 
 let collection = 'authors'
 
-let Author = model(shema,collection)
+let Author = model(collection,shema)
 export default Author

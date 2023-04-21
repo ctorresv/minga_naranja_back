@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 let schema = new mongoose.Schema({
-    neme: { type: String, required: true },
+    name: { type: String, required: true },
     logo: { type: String, required: true },
     website: { type: String, required: true },
     description: { type: String, required: true },
@@ -16,5 +16,5 @@ let schema = new mongoose.Schema({
 })
 let collection = 'companies'
 
-let Company = mongoose.model(schema,collection)
+let Company = mongoose.model(collection,schema)
 export default Company
